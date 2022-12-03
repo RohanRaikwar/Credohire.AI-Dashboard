@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=League+Spartan:wght@100;200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*             Plan _container_design                             */
+body{
+    padding:  30px 50px;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+}
+#plan_container{
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px ;
+    border-radius: 10px;
+    -webkit-box-shadow: -3px 7px 15px 1px rgba(41,41,41,0.24); 
+box-shadow: -3px 7px 15px 1px rgba(41,41,41,0.24);
+}
+#plan_container #plan_time p{
+    color: rgb(77, 74, 74);
+    font-size: 10px;
+
+}
+#plan_container #plan-date{
+    color: rgb(15, 228, 157);
+    padding: 10px 0px ;
+}
+/*____________________Monitering_Container_Desig______________________*/
+#monitering_containter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+#monitering_containter> div {
+    width: 18%;
+    height: 116px;
+    padding: 30px 0px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+    box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+}
+#monitering_containter>div::before{
+    content: ' ';
+    width: 100%;
+    height: 10px;
+    z-index: 1000;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(38,168,84);
+background: linear-gradient(135deg, rgba(38,168,84,1) 61%, rgba(78,255,113,1) 100%);
+    top: 0px;
+    left: 0px;
+}
+#monitering_containter>div:nth-child(2)::before{
+    background: rgb(34,89,195);
+background: linear-gradient(80deg, rgba(34,89,195,1) 48%, rgba(40,63,180,1) 100%);
+
+}
+#monitering_containter>div:nth-child(3)::before{
+    background: rgb(195,53,34);
+background: linear-gradient(80deg, rgba(195,53,34,1) 65%, rgba(180,176,40,1) 100%);
+}
+#monitering_containter>div:nth-child(4)::before{
+    background: rgb(58,34,195);
+background: linear-gradient(80deg, rgba(58,34,195,1) 40%, rgba(40,180,160,1) 83%);
+
+}
+#monitering_containter>div:nth-child(5)::before{
+    background: rgb(38,78,168);
+    background: linear-gradient(217deg, rgba(38,78,168,1) 0%, rgba(255,78,141,1) 100%);
+}
+
+#monitering_containter div h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+#monitering_containter div h3{
+    font-size: 16px;
+    color: rgb(77, 76, 76);
+}
+/*______________________Job_Record_conatainer_Design_____*/
+#job_record_container{
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: -3px 7px 15px 1px rgba(41,41,41,0.24); 
+box-shadow: -3px 7px 15px 1px rgba(41,41,41,0.24);
+
+}
+#job_record_container table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+#job_record_container table th,td{
+    text-align: left;
+    padding: 14px 30px;
+    color: rgb(54, 52, 52);
+}
+#job_record_container table tr:nth-child( even )
+{
+ background-color: rgba(46, 59, 50, 0.13);
+}
+#job_record_container table td:nth-child(3),th:nth-child(3){
+    width: 30%;
+}
+#job_record_container table td:nth-child(5) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    
+}
+#job_record_container table td:nth-child(5) div{
+    background-color: rgb(207, 75, 115);
+    border-radius: 3px;
+    color: white;
+    padding: 2px  6px;
+
+}
+#job_record_container table td:nth-child(6){
+    padding: 5px 5px;
+}
+#job_record_container table td:nth-child(6) button,a{
+    color: white;
+    background-color: rgb(39, 50, 150);
+    border: none;
+    border-radius: 3px;
+    padding: 7px 6px;
+
+} 
+/*________________________Media_Quarys__________________*/
+ @media screen and ((max-width:900px)){
+    body {
+        padding: 30px 21px;
+        background-color: rgb(250, 250, 250);
+        position: relative;
+    }
+    #monitering_containter> div {
+        width: 118px;
+        height: 83px;
+        padding: 18px 0px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        -webkit-box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+        box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+    }
+    #monitering_containter div h1 {
+        font-size: 26px;
+        font-weight: 900;
+    }
+    #monitering_containter div h3 {
+    font-size: 13px;
+    color: rgb(77, 76, 76);
+}
+#job_record_container {
+    width: 100%;
+    padding: 15px 9px;
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+    box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+}
+#job_record_container table th, td {
+    text-align: left;
+    padding: 3px 3px;
+    color: rgb(54, 52, 52);
+}
+#job_record_container table th, td {
+    text-align: left;
+    padding: 7px 5px;
+    color: rgb(54, 52, 52);
+}
+#job_record_container table td:nth-child(5) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 9px;
+}
+
+
+ }
+ @media screen and (max-width:700px){
+    #monitering_containter {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 0px;
+    }
+    #monitering_containter> div {
+        width: 118px;
+        margin: 10px;
+        height: 83px;
+        padding: 18px 0px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        -webkit-box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+        box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+    }
+    #job_record_container table {
+        width: 584px;
+        border-collapse: collapse;
+        background-color: white;
+    }
+    #job_record_container {
+        width: 100%;
+        padding: 15px 9px;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+        box-shadow: -3px 7px 15px 1px rgb(41 41 41 / 24%);
+        overflow-x: scroll;
+    }
+    
+
+    
+
+
+ }
